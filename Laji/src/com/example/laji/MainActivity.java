@@ -38,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
 
     public  native String stringFromJNI();
     static {
+        //please notice the order.
         System.load("libswresample-1.so");
         System.load("libavutil-54.so");
         System.load("libpostproc-53.so");
